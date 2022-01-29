@@ -8,6 +8,5 @@ console.log("react index.js working");
 
 ReactDOM.render( 
     <App />,
-    // <h1>hey im working</h1>,
     document.getElementById('root')
 );
