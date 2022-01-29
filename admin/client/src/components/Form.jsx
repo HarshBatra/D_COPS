@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "./Button";
 import Input from "./Input";
-// import Dish, {AppendDish} from "/Applications/Sandali/canteen/src/DishList.js"
+
 
 function Form(props){
 
