@@ -1,14 +1,9 @@
-// npm run dev
-// node app.js
-
 const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
 
 app.use(express.static("public"));
-// app.use(express.static('/Applications/Sandali/Dcops/client/public'))
-// app.use(express.static('/Applications/Sandali/Dcops/client/src'))
 
 const NewDishItemsList = []
 
