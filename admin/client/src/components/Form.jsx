@@ -14,9 +14,6 @@ function Form(props){
                 let newItem = { name : DishName, price : DishPrice};
                 props.onAdd(newItem);
                 event.preventDefault();  
-
-                // console.log("\nForm onSubmit :");
-                // console.log(newItem);
             } 
         } 
         className="row">
