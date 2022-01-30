@@ -5,13 +5,11 @@ function List(props){
     const [ data, setData] = useState([]);
     
     const getData = () => {
-        let url = 'http://localhost:3001'; //URL of the resource we want to fetch
+        let url = 'http://localhost:3001'; 
         fetch(url).then((response) => response.json()).then((receivedData) => setData(receivedData));
     }
 
     
-    //Runs on the first render
-    //And any time any dependency value changes
     useEffect( () => getData(), [] );
 
     return(
