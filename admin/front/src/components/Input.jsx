@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-
-
 function Input(props){
     const [entry, setEntry] = useState("");
     function handleInput(event){
