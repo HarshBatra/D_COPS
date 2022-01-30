@@ -10,10 +10,10 @@ var app = module.exports = express();
 
 //----------------------- ----------------------- -----------------------
 app.use(cors());
-app.engine('.html', require('ejs').__express);      //Register ejs as .html. If we did not call this, we would need to name our views foo.ejs instead of foo.html. The __express method is simply a function that engines use to hook into the Express view system by default, so if we want to change "foo.ejs" to "foo.html" we simply pass _any_ function, in this case `ejs.__express`.
-app.set('views', path.join(__dirname, "front", "public"))   // since express defaults to CWD/views
-app.use(express.static(path.join(__dirname, 'front', 'src')));  // Path to our public directory
-app.set('view engine', 'html')  // Without this you would need to supply the extension to res.render() ex: res.render('users.html').
+app.engine('.html', require('ejs').__express);      
+app.set('views', path.join(__dirname, "front", "public"))   
+app.use(express.static(path.join(__dirname, 'front', 'src')));  
+app.set('view engine', 'html')  
 app.use( bodyParser.urlencoded({ extended : true }) );
 
 //----------------------- ----------------------- -----------------------
