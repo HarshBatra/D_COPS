@@ -11,5 +11,5 @@ function App(props){
         </div>
     );
 }
-//dishList={dishList} 
+
 export default App;
